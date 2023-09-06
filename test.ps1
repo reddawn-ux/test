@@ -13,4 +13,4 @@ Write-Host "merhaba..."
 New-Item -Path 'C:\Users\Pc\Desktop\file.txt' -ItemType File
 notepad.exe "'C:\Users\Pc\Desktop\file.txt"
 
-Start-Process "https://google.com/"
+
