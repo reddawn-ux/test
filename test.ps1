@@ -9,6 +9,6 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 	Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
 	Exit
 }
-Write-Host "Checking winget..."
-
+Write-Host "merhaba..."
+New-Item -Path ' C:\Users\Pc\Desktop\testklasör' -ItemType Directory
 Start-Process "https://google.com/"
