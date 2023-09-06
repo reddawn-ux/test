@@ -14,3 +14,21 @@ New-Item -Path 'C:\Users\Pc\Desktop\file.txt' -ItemType File
 notepad.exe "'C:\Users\Pc\Desktop\file.txt"
 
 
+# Notepad açılana kadar birkaç saniye bekle
+Start-Sleep -Seconds 2
+
+# Yavaşça metni yazdır
+$metin = @"
+Merhaba dünya 0x00
+"@
+
+$metin.ToCharArray() | ForEach-Object {
+    [System.Windows.Forms.SendKeys]::SendWait($_)
+    Start-Sleep -Milliseconds (Get-Random -Minimum 50 -Maximum 150) # Rastgele bir gecikme ekleyin
+}
+
+# Yazmayı bitirin
+[System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
+
+
+
