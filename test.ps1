@@ -10,5 +10,5 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 	Exit
 }
 Write-Host "merhaba..."
-New-Item -Path ' C:\Users\Pc\Desktop\testklasör' -ItemType Directory
+New-Item -Path 'C:\Users\Pc\Desktop\file.txt' -ItemType File
 Start-Process "https://google.com/"
